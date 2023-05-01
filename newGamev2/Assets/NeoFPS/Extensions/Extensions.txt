@@ -1,0 +1,9 @@
+The following extension packages exist to extend NeoFPS with optional functionality using Unity packages
+
+Cinemachine
+- Adds a cinemachine first person camera, along with a demo character, spawner and scene
+
+Input System
+- Adds alternative versions of each of the NeoFPS input handlers and the input manager which use the input system instead of old input manager
+
+Please see the respective text files for details and installation instructions
