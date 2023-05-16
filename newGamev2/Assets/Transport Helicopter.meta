@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:newGamev2/Assets/Transport Helicopter.meta
 guid: 2d09fb8c3939aef429cbb0dd3cba796c
+========
+guid: 5b6f6e0884a002740a95549be65d1c6b
+>>>>>>>> ma8-newbranch:newGamev2/Assets/Transport Helicopter/Transport_Chopper.fbm.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
