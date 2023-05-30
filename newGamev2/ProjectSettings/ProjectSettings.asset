@@ -704,6 +704,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Standalone: NEOFPS;EMERALD_AI_PRESENT
+    WebGL: EMERALD_AI_PRESENT;NEOFPS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
