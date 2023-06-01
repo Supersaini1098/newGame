@@ -7,17 +7,17 @@ public class CutSceneEnter : MonoBehaviour
     
         public GameObject thePlayer;
         public GameObject cutsceneCam;
-        public GameObject cutsceneCam2;
+        //public GameObject cutsceneCam2;
 
         void OnTriggerEnter(Collider other)
         {
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
             cutsceneCam.SetActive(true);
-            cutsceneCam2.SetActive(false);
+            //cutsceneCam2.SetActive(false);
             thePlayer.SetActive(false);
-            StartCoroutine(KeepGoing());
+            StartCoroutine(FinishCut());
         }
-
+    /*
         IEnumerator KeepGoing()
         {
             yield return new WaitForSeconds(2);
@@ -26,13 +26,14 @@ public class CutSceneEnter : MonoBehaviour
             cutsceneCam2.SetActive(true);
             StartCoroutine(FinishCut());
         }
-
+        */
         IEnumerator FinishCut()
         {
-            yield return new WaitForSeconds(9);
+            yield return new WaitForSeconds(33);
             thePlayer.SetActive(true);
             cutsceneCam.SetActive(false);
-            cutsceneCam2.SetActive(false);
-
+        //cutsceneCam2.SetActive(false);
+   
+     
         }
  }
