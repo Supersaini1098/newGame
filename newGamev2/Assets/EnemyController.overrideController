@@ -106,7 +106,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Soldier (Ranged)
+  m_Name: EnemyController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -479,7 +479,7 @@ AnimatorStateMachine:
     m_Position: {x: 744, y: -672, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 1107021621038995926}
-    m_Position: {x: 720, y: -460, z: 0}
+    m_Position: {x: 720, y: -456, z: 0}
   m_AnyStateTransitions:
   - {fileID: 1101351513334033222}
   - {fileID: 1101537737825962214}
@@ -1285,7 +1285,7 @@ BlendTree:
   m_Name: Idle
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 16a8601c626255a4c85c3804c8c6ab13, type: 3}
+    m_Motion: {fileID: 0}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -2037,6 +2037,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Turn Left
     m_EventTreshold: 0
+  - m_ConditionMode: 4
+    m_ConditionEvent: Speed
+    m_EventTreshold: 0.085
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102659188731895510}
   m_Solo: 0
@@ -3078,7 +3081,7 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0.25
-  m_TransitionOffset: 0.25
+  m_TransitionOffset: 0
   m_ExitTime: 0.76666665
   m_HasExitTime: 0
   m_HasFixedDuration: 1
@@ -5503,6 +5506,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Turn Right
     m_EventTreshold: 0
+  - m_ConditionMode: 4
+    m_ConditionEvent: Speed
+    m_EventTreshold: 0.085
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102474647111940030}
   m_Solo: 0
@@ -9736,8 +9742,8 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0.25
+  m_TransitionDuration: 0.5
+  m_TransitionOffset: 0
   m_ExitTime: 0.8011364
   m_HasExitTime: 0
   m_HasFixedDuration: 1
@@ -12313,7 +12319,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Combat Hit 1
-  m_Speed: 1
+  m_Speed: 0
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101811267416052624}
@@ -12326,7 +12332,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: c803867d45671124c9a2577dc88166be, type: 3}
+  m_Motion: {fileID: 0}
   m_Tag: Hit
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -12340,7 +12346,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Death 1
-  m_Speed: 1
+  m_Speed: 0
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -12352,7 +12358,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 1ca281e348851d24384f9b430db0fac8, type: 3}
+  m_Motion: {fileID: 0}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -12814,7 +12820,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 3fdaf0717f44cd54d81b055ba5378f62, type: 3}
+  m_Motion: {fileID: -203655887218126122, guid: 4281e767720bbc94698ef17ca486ec88, type: 3}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -13100,7 +13106,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Attack 1
-  m_Speed: 1
+  m_Speed: 0
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101393286178235994}
@@ -13118,7 +13124,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 087bd313914930e42a62c139b78c6399, type: 3}
+  m_Motion: {fileID: 0}
   m_Tag: Attack
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -13225,7 +13231,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 4281e767720bbc94698ef17ca486ec88, type: 3}
+  m_Motion: {fileID: 0}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -13277,7 +13283,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 3fdaf0717f44cd54d81b055ba5378f62, type: 3}
+  m_Motion: {fileID: 0}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -13607,7 +13613,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: -203655887218126122, guid: f3a58273dd8876e46a213006bf55a625, type: 3}
   m_Tag: Idle
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -13693,7 +13699,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 4281e767720bbc94698ef17ca486ec88, type: 3}
+  m_Motion: {fileID: -203655887218126122, guid: 3fdaf0717f44cd54d81b055ba5378f62, type: 3}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -14039,7 +14045,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Run Attack 1
-  m_Speed: 1
+  m_Speed: 0
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101629043247722770}
@@ -15020,7 +15026,7 @@ AnimatorStateMachine:
   - {fileID: 1109300209096618290}
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: -50, z: 0}
+  m_AnyStatePosition: {x: 48, y: -48, z: 0}
   m_EntryPosition: {x: 24, y: 60, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 552, y: 48, z: 0}
@@ -15221,7 +15227,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102330053577202056}
-    m_Position: {x: 260, y: -10, z: 0}
+    m_Position: {x: 264, y: -12, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102971365545547282}
     m_Position: {x: 264, y: 60, z: 0}
