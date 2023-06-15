@@ -4593,6 +4593,127 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c51d7df2d29ba8449f85eb74c672555, type: 3}
+--- !u!1001 &1407144280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 107.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083631, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: AIName
+      value: Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: AITitle
+      value: Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: TabNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: BehaviorRef
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: WanderTypeRef
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: DetectionRadius
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: DetectionTypeRef
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: MaxChaseDistance
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: MaxLookAtDistance
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: DetectionFrequency
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: TemperamentTabNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: DetectionTagsTabNumber
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: FactionsAndTagTabNumber
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_ProjectileCollisionPoint.x
+      value: 62.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_ProjectileCollisionPoint.y
+      value: 12.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083664, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: MeleeAttacks.Array.data[0].MaxDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411316709054083674, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
+      propertyPath: m_Name
+      value: NeoFpsEmeraldAI_EllenLimbDamage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 63e22910825cbfa4a90265bff9d572bb, type: 3}
 --- !u!1001 &1424961744
 PrefabInstance:
   m_ObjectHideFlags: 0
