@@ -1157,9 +1157,9 @@ MonoBehaviour:
     m_Values: []
     m_GameObject: {fileID: 114660341047048418}
   m_PrefabStrongID: 1544798162
-  expandChildObjects: 0
-  expandNeoComponents: 0
-  expandOtherComponents: 0
+  expandChildObjects: 1
+  expandNeoComponents: 1
+  expandOtherComponents: 1
   prefabGuid: 2345fa8f7cb306c499e81465ce9c1bd8
 --- !u!1 &1065108785962622
 GameObject:

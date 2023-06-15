@@ -60,10 +60,11 @@ namespace NeoFPS.EmeraldAI
 
         #region IDamageHandler implementation
 
+		private DamageFilter m_InDamageFilter = DamageFilter.AllDamageAllTeams;
         public DamageFilter inDamageFilter
         {
-            get { return DamageFilter.AllDamageAllTeams; ; }
-            set { }
+            get { return m_InDamageFilter; }
+            set { m_InDamageFilter = value; }
         }
 
         public DamageResult AddDamage(float damage)
@@ -98,7 +99,7 @@ namespace NeoFPS.EmeraldAI
                 return AddDamage(damage);
 
             // Apply damage
-            if (m_Multiplier > 0f)
+            if (m_Multiplier > 0f && inDamageFilter.CollidesWith(source.outDamageFilter, false))
             {
                 int scaledDamage = Mathf.CeilToInt(damage * m_Multiplier);
 
@@ -113,7 +114,7 @@ namespace NeoFPS.EmeraldAI
 						m_EmeraldAISystem.Damage(
 							scaledDamage,
 							EmeraldAISystem.TargetType.Player,
-							source.damageSourceTransform
+							source.controller.currentCharacter.transform
 							);
 					}
 					catch (Exception e)
@@ -133,12 +134,12 @@ namespace NeoFPS.EmeraldAI
                 {						
 					try
 					{
-                    // Apply damage
-                    m_EmeraldAISystem.Damage(
-                        scaledDamage,
-                        EmeraldAISystem.TargetType.NonAITarget,
-                        source.damageSourceTransform
-                        );
+                        // Apply damage
+                        m_EmeraldAISystem.Damage(
+                            scaledDamage,
+                            EmeraldAISystem.TargetType.NonAITarget,
+                            source.damageSourceTransform
+                            );
 					}
 					catch (Exception e)
 					{
