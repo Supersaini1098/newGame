@@ -29,7 +29,11 @@ public class CutSceneEnter : MonoBehaviour
 
         IEnumerator FinishCut()
         {
+<<<<<<< Updated upstream
             yield return new WaitForSeconds(9);
+=======
+            yield return new WaitForSeconds(25);
+>>>>>>> Stashed changes
             thePlayer.SetActive(true);
             cutsceneCam.SetActive(false);
             cutsceneCam2.SetActive(false);
