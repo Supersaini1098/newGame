@@ -32,7 +32,7 @@ public class CutSceneEnter : MonoBehaviour
         {
 
             
-            yield return new WaitForSeconds(33);
+            yield return new WaitForSeconds(21);
 
             thePlayer.SetActive(true);
             cutsceneCam.SetActive(false);
